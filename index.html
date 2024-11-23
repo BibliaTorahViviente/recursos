@@ -86,16 +86,40 @@
         <img src="https://recursosbibliatorahviviente.wordpress.com/wp-content/uploads/2024/11/btv.webp" alt="Logo Biblia Toráh Viviente" class="logo">
     </div>
   <!-- Contenedor del Traductor de Google -->
-    <div id="google_translate_element"></div>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'es',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- Contenedor del Traductor de Google -->
+<div id="google_translate_element" class="translate-container"></div>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'es',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<style>
+    .translate-container {
+        margin: 20px auto;
+        padding: 15px;
+        width: 90%;
+        max-width: 400px;
+        background: linear-gradient(45deg, #1e90ff, #00bfff);
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        color: #fff;
+        text-align: center;
+    }
+
+    .translate-container iframe {
+        display: block;
+        width: 100%;
+        height: auto;
+        min-height: 120px; /* Altura mínima para expandirse */
+        margin-top: 10px;
+        border: none;
+    }
+</style>
     <!-- Encabezado -->
     <h1>Recursos Biblia Toráh Viviente 2025</h1>
     <h2>Ministerio Judío Mesiánico</h2>
